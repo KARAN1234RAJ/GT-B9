@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video width="320" height="240" controls preload="auto">
+      <source
+        src="https://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <h3>Preloader with "auto" value</h3>
+
+    <video width="320" height="240" controls preload="metadata">
+      <source
+        src="https://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <h3>Preloader with "metadata" value</h3>
+
+    <video width="320" height="240" controls preload="none">
+      <source
+        src="https://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <h3>Preloader with "none" value</h3>
+  </body>
+</html>
