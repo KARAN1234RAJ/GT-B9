@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Border property</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-rows: 150px 150px;
+        grid-template-columns: 150px 150px 150px 150px;
+        grid-gap: 40px;
+      }
+      .box {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 45px;
+      }
+      .box1 {
+        border: 10px dotted darkgreen;
+      }
+      .box2 {
+        border: 10px dashed red;
+      }
+      .box3 {
+        border: 10px solid darkblue;
+      }
+      .box4 {
+        border: 10px double chartreuse;
+      }
+      .box5 {
+        border: 10px groove darkmagenta;
+      }
+      .box6 {
+        border: 10px ridge slategrey;
+      }
+      .box7 {
+        border: 10px inset olive;
+      }
+      .box8 {
+        border: 10px outset orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box box1">10px dotted darkgreen</div>
+      <div class="box box2">10px dashed red</div>
+      <div class="box box3">10px solid darkblue</div>
+      <div class="box box4">10px double chartreuse</div>
+      <div class="box box5">10px groove darkmagenta</div>
+      <div class="box box6">10px ridge slategrey</div>
+      <div class="box box7">10px inset olive</div>
+      <div class="box box8">10px outset orange</div>
+    </div>
+  </body>
+</html>
