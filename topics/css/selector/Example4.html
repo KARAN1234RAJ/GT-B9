@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p[target] {
+        background-color: hsl(60, 85%, 45%);
+        padding: 10px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      p[target="wxyz"] {
+        color: #d40c132f;
+      }
+      [target="abc"] {
+        background-color: #ff0000;
+        color: white;
+      }
+      [type="text"] {
+        background-color: white;
+        color: rgb(208, 8, 8);
+      }
+      [type="email"] {
+        background-color: #0b0b0b;
+        color: #f8f5f5;
+      }
+      [placeholder="name"] {
+        color: green;
+        font-size: 18px;
+      }
+      [placeholder="userName"] {
+        color: #500fe7;
+        font-size: 20px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 target="abc">Attribute Selector</h1>
+    <h2 target="abc">Attribute Selector</h2>
+    <p target="xyz">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste
+      officiis doloremque, nulla rerum quis accusantium quam repellat veritatis
+      at accusamus possimus omnis architecto tenetur quidem obcaecati illo porro
+      assumenda quibusdam harum dignissimos. Vitae ex quam quae, praesentium
+      sequi magnam accusantium reiciendis! Minima, earum eius libero esse
+      impedit dolore magni.
+    </p>
+    <p target="wxyz">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste
+      officiis doloremque, nulla rerum quis accusantium quam repellat veritatis
+      at accusamus possimus omnis architecto tenetur quidem obcaecati illo porro
+      assumenda quibusdam harum dignissimos. Vitae ex quam quae, praesentium
+      sequi magnam accusantium reiciendis! Minima, earum eius libero esse
+      impedit dolore magni.
+    </p>
+    <input type="text" placeholder="name" value="Karan" />
+    <input type="text" placeholder="userName" value="Karan12" />
+    <input type="email" placeholder="Enter Email" value="Karan@gmail" />
+  </body>
+</html>

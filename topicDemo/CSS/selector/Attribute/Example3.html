@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     h1[target~="heading"]{
+          background-color: hsl(302, 90%, 57%);
+     }
+     
+      p[target~="abc"] {
+        background-color: #0d0f10;
+        font-size: medium;
+        color: #13b80b;
+        font-weight: bold;
+        padding: 5px;
+      }
+      p[target~="xyz"] {
+        background-color: #2ff42f;
+        font-size: 20px;
+        color: #333333;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 target="main heading">Words separated by space</h1>
+    <p target="abc mnq">
+      simply dummy text of the printing and typesetting industry. Lorem Ipsum
+      has been the industry's standard dummy text ever since the 1500s
+    </p>
+
+    <p target="abc xyz">Welcome to Drf</p>
+  </body>
+</html>
