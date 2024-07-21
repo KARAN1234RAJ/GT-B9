@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: red;
+        font-size: 2em;
+        text-align: center;
+      }
+      .two + p {
+        color: blue;
+        background-color: aqua;
+        font-size: 20px;
+      }
+      section ~ p {
+        color: green;
+        background-color: yellow;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Combinator</h1>
+    <div class="one">
+      <div class="two">
+        <main>
+          <p>I am Para 1</p>
+          <p>I am Para 2</p>
+        </main>
+        <div>
+          <p>I am Para 3</p>
+        </div>
+      </div>
+      <p>I am Para 4</p>
+      <section>
+        <p>I am Para 5</p>
+        <p>I am Para 6</p>
+      </section>
+      <p>para 7</p>
+      <address></address>
+      <p>para 8</p>
+    </div>
+  </body>
+</html>

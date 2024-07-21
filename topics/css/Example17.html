@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     section p {
+        background-color: green;
+        color: rgb(225, 218, 232);
+        font-size: 24px;
+      }
+      #mainDiv .para{
+          background-color: greenyellow;
+          color:blue;
+          font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>descendant selector</h1>
+    <p>This is para outside div</p>
+    <main id="mainDiv">
+      <p class="para">This is para inside div</p>
+    </main>
+    <section>
+      <p>This is para outside div</p>
+    </section>
+    <p class="para">this is again paragraph</p>
+  </body>
+</html>

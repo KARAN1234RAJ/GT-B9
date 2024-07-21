@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2 + p {
+        background-color: yellow;
+        color: red;
+        font-size: 30px;
+      }
+      div + p {
+        background-color: green;
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+     <p>first Para</p>
+    <h2 style="color: red">Adjacent Sibling Selector</h2>
+
+    <p>
+      The adjacent sibling selector is used to select an element that is
+      adjacent to the first specified element and also the sibling of the first
+      element.
+    </p>
+    <p>
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here'
+    </p>
+    <div>
+      This is div
+      <p>This paragraph is inside div</p>
+    </div>
+    <p>This paragraph will be selected</p>
+    <p>One more paragraph, but this will not be selected</p>
+  </body>
+</html>
