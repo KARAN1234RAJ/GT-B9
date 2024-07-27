@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        color: rgb(43, 38, 38);
+        font-size: 1.5em;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pure CSS Gradient Background</h1>
+  </body>
+</html>

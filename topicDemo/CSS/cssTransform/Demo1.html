@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 300px;
+        height: 300px;
+        border: 1px solid rgb(15, 156, 17);
+        transform: translate(200px, 100px);
+      }
+      .parent > .child {
+        width: 150px;
+        height: 100px;
+        background-color: rgb(229, 101, 216);
+        /* background-color: antiquewhite; */
+        color: rgb(251, 255, 251);
+        /* color: black; */
+        /* transform: translateX(100px) translateY(100px); */
+        transform: translate(100px, 100px) rotate(90deg);
+        /* transform: rotate(90deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">Child</div>
+    </div>
+  </body>
+</html>

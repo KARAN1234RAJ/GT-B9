@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+     background-color: lightgray;
+     font-family: Arial, sans-serif;
+     /* overflow: hidden; */
+}
+nav {
+  background-color: orange;
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 10px;
+  float: left;
+  font-size: 20px;
+  margin: 20px;
+}
+nav ul li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+    background-color:#151269;
+    border-radius: 5px;
+    /* padding: 12px; */
+   }
+   
+   nav ul li .active {
+     background-color:#151269;
+     border-radius: 5px;
+     /* padding: 12px; */
+    }
+    /* Side bar */
+    aside{
+      /* position: fixed; */
+      /* top: 60px; */
+      /* left: 0; */
+      width: 150px;
+      background-color: rgba(76, 194, 234,.5);
+      height: 100vh;
+      /* overflow-y: auto; */
+      float: left;
+      margin-left: 10;
+    }
+
+    /* css on main */
+    main{
+     float: right;
+    }

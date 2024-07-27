@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+      }
+      #container > div {
+        height: 300px;
+        width: 300px;
+        padding: 10px;
+        background-color: lightblue;
+        border-radius: 50%;
+      }
+      #container > div:nth-child(1) {
+        background-image: repeating-conic-gradient(red 10%, yellow 20%);
+      }
+      #container > div:nth-child(2) {
+        background-image: repeating-conic-gradient(
+          pink 20%,
+          yellow 30%,
+          black 10%
+        );
+      }
+      #container > div:nth-child(3) {
+        background-image: repeating-conic-gradient(
+          white 0%,
+          pink 31%,
+          red 55%,
+          yellow 74%,
+          black
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div class="three">Three</div>
+    </div>
+  </body>
+</html>

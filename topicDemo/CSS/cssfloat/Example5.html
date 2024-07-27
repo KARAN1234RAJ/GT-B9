@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .img-container {
+        float: left;
+        width: 25%;
+        padding: 5px; /*It gives space between the images*/
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Float In CSS</h2>
+    <p>Float images side by side:</p>
+
+    <div class="clearfix">
+      <div class="img-container">
+        <img src="../../images/drdo_logo.png" alt="Curriculum" style="width:100%" />
+      </div>
+      <div class="img-container">
+        <img src="../../images/girlWithRose.jpg" alt="Classes" style="width:100%" />
+      </div>
+      <div class="img-container">
+        <img src="../../images/kidWithRose.jpg" alt="Experience" style="width:100%" />
+      </div>
+      <div class="img-container">
+        <img src="../../images/girlWithRose.jpg" alt="Italy" style="width:100%" />
+      </div>
+    </div>
+
+    <p>
+      Note that we use the clearfix hack to take care of the layout flow and
+      that we add the box-sizing property to make sure that the image container
+      doesn't break due to extra padding. Try to remove this code to see the
+      effect.
+    </p>
+  </body>
+</html>

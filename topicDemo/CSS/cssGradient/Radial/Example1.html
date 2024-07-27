@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+      }
+      #container > div {
+        height: 250px;
+        width: 300px;
+        padding: 10px;
+        background-color: lightblue;
+      }
+      #container > div:nth-child(1) {
+          background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+      }
+      #container > div:nth-child(2) {
+        background-image: radial-gradient(#d2f65f, #ff0011);
+      }
+      #container > div:nth-child(3) {
+        background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div class="three">Three</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      #education {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(197, 222, 222);
+        height:500px;
+      }
+      #education >.card {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        border-radius: 50%;
+        text-align: center;
+       padding-top: 100px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="education">
+      <div class="card">Resume</div>
+      <div class="card">Project</div>
+      <div class="card">Contact</div>
+    </div>
+  </body>
+</html>

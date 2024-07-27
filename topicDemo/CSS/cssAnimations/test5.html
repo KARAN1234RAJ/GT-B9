@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .logo {
+        margin-top: 0.6em;
+      }
+
+      .logo span {
+        display: inline-block;
+        animation: wave-text 1s ease-in-out infinite;
+      }
+
+      .logo span:nth-of-type(1) {
+        animation-delay: 0s;
+      }
+      .logo span:nth-of-type(2) {
+        animation-delay: 0.1s;
+      }
+      .logo span:nth-of-type(3) {
+        animation-delay: 0.2s;
+      }
+      .logo span:nth-of-type(4) {
+        animation-delay: 0.3s;
+      }
+      .logo span:nth-of-type(5) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes wave-text {
+        00% {
+          transform: translateY(0em);
+        }
+        60% {
+          transform: translateY(-0.6em);
+        }
+        100% {
+          transform: translateY(0em);
+        }
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2em;
+        font-family: "Courgette", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <span>H</span>
+      <span>E</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+    </div>
+  </body>
+</html>

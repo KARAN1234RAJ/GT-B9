@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #2f2f2f;
+      }
+      h1 {
+        font-family: Verdana;
+        color: #ffcba4;
+        font-size: 50px;
+        font-weight: 50;
+        animation: animate 2s infinite;
+      }
+      @keyframes animate {
+        0% {
+          transform: scale(0);
+        }
+        60% {
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+  </body>
+</html>

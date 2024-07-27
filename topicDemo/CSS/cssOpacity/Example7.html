@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #gradient1 {
+        height: 150px; /*sets the height of the div box to 150px*/
+        background: linear-gradient(
+          to right,
+          rgba(255, 122, 89, 1),
+          rgba(255, 122, 89, 0)
+        );
+        /*opacity is initially set to 1, and on moving to the left, it gradually decreases to 0*/
+      }
+      #gradient2 {
+        height: 150px; /*sets the height of the div box to 150px*/
+        background: linear-gradient(
+          to right,
+          rgba(255, 122, 89, 0.8),
+          rgba(255, 122, 89, 0)
+        );
+        /*opacity is initially set to 0.8, and on moving to left it gradually decreases to 0*/
+      }
+      #gradient3 {
+        height: 150px; /*sets the height of the div box to 150px*/
+        background: linear-gradient(
+          to right,
+          rgba(255, 122, 89, 0.6),
+          rgba(255, 122, 89, 0)
+        );
+        /*opacity is initially set to 0.6, and on moving to the left, it gradually decreases to 0*/
+      }
+      #gradient4 {
+          height: 150px; /*sets the height of the div box to 150px*/
+        background: linear-gradient( to top,rgba(0, 128, 0, 1), rgba(0,128,0,.5))
+      }
+      #gradient5{
+        height: 150px;
+        background: linear-gradient(to right, rgba(125,0,128,1), rgba(125,120,120,.5));
+      }
+    </style>
+    <title>CSS Opacity Gradient</title>
+  </head>
+  <body>
+    <div id="gradient1"></div>
+    <br />
+    <div id="gradient2"></div>
+    <br />
+    <div id="gradient3"></div>
+    <br />
+    <div id="gradient4"></div>
+    <div id="gradient5">12</div>
+    
+
+    <br />
+  </body>
+</html>

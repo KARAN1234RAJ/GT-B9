@@ -1,0 +1,34 @@
+<!-- transition-property:
+<property_name
+  >|<property_name
+    >, ...<property_name
+      >] | none | all | Here,
+      <property_name>
+        refers to the CSS Property **Example** Let's create a box and apply the
+        CSS transition property for better understanding. ```htmlembedded -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #main {
+        width: 100px;
+        height: 100px;
+        background: Blue;
+        /* transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        transition-delay: 1s; */
+        transition: width 2s linear 1s;
+      }
+
+      #main:hover {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+</html>
+<!-- </property_name></property_name></property_name
+></property_name> -->

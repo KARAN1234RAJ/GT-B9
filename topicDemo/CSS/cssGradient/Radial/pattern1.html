@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+      }
+      #one {
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(#d2f65f, #ff0011);
+        background-image: radial-gradient(
+          50% 50% at center,
+          #c39f76 0% 80%,
+          #0000 81% 100%
+        );
+        background-image: radial-gradient(50% 50%, #c39f76 80%, #0000 81%);
+        background-image: radial-gradient(40% 40%, #c39f76 99%, #0000);
+        /* background-size: 250px 250px; */
+        /* background-repeat: repeat; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one"></div>
+      <div id="one"></div>    
+    </div>
+  </body>
+</html>
