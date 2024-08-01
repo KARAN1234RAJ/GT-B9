@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        background-color: black;
+      }
       img {
         width: 200px;
         height: 200px;
         margin: 50px;
+        border-radius: 50%;
         animation-name: rotate;
-        animation-duration: 1s;
+        animation-duration: 30s;
         animation-iteration-count: infinite;
       }
       img:hover {
@@ -18,10 +22,11 @@
       }
       @keyframes rotate {
         from {
-          transform: rotate(0deg);
+          transform:  translateX(0px);
         }
         to {
-          transform: rotate(360deg);
+          transform: translateX(1000px);
+          
         }
       }
     </style>

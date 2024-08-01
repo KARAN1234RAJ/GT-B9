@@ -17,17 +17,30 @@
         color: #ffcba4;
         font-size: 50px;
         font-weight: 50;
-        animation: animate 2s infinite;
+        /* animation: animate 5s infinite; */
+        animation-name: heading;
+        animation-duration: 5s;
+        animation-iteration-count:1;
       }
-      @keyframes animate {
-        0% {
+      @keyframes heading {
+        /* 0% {
           transform: scale(0);
         }
         60% {
           transform: scale(2);
+          color:green;
         }
         100% {
           transform: scale(1.5);
+          color: greenyellow;
+        } */
+         from {
+          transform: scale(0);
+          color: #ffcba4;
+        }
+        to{
+          transform: scale(1);
+          color: #bd6a2a;
         }
       }
     </style>
