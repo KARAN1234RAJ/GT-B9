@@ -7,5 +7,5 @@ let config = {
 let host = config?.server?.host ?? "defaultHost";
 let port = config?.server?.port ?? 8080;
 
-console.log(host); 
-console.log(port); 
+console.log(host); //local
+console.log(port); //8080
