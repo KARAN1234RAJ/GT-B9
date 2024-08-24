@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <p id="demo">This is a paragraph.</p>
+    <p class="colorName">Red</p>
+    <p class="colorName">Green</p>
+    <p class="colorName">Blue</p>
+    <p class="colorName">Pink</p>
+    <script>
+      let para = document.getElementById("demo");
+      // para.innerHTML="Document Object Model"
+      let heading = document.querySelector("h1");
+      heading.innerHTML = "Document Object Model";
+      let color = document.querySelectorAll(".colorName");
+      console.log(para);
+      console.log(heading);
+      console.log(color[0].innerHTML);
+    </script>
+  </body>
+</html>

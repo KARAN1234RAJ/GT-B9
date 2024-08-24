@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Data Display using Api</h1>
+    <div id="card"></div>
+    <script>
+      let cardHtml = document.getElementById("card");
+      console.log(cardHtml);
+
+      let api = "https://fakestoreapi.com/products";
+      fetch(api)
+        .then((response) =>
+          response.json().then((result) => {
+            console.log(result[0]);
+            let title = result[3].title;
+            let price = result[3].price;
+            let image = result[3].image;
+           
+            cardHtml.innerHTML = `
+            <h2>${title}</h2>
+            <img src="${image}" alt="${title} height="${200}" width= "${200}">
+            <p>Price: $${price}</p>`;
+          })
+        )
+        .catch((error) => error);
+    </script>
+  </body>
+</html>
