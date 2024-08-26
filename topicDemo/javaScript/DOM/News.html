@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Html Code  -->
+    <div id="container">
+
+    </div>
+    <!-- JS code -->
+    <script>
+      let container = document.getElementById("container");
+      // Fetch data from NewsAPI
+      let api =
+        "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=d75118449e5148a4ae3f517868dec207";
+
+      fetch(api).then((response) =>
+        response.json().then((data) => {
+          data.articles.map((article) => {
+                let div = document.createElement("div");
+                div.innerHTML = `
+                  <h2>${article.title}</h2>
+                  <img src="${article.urlToImage}" alt="${article.title}">
+                  <p>${article.description}</p>
+                  <a href="${article.url}">Read More</a>
+                `;
+                container.appendChild(div);
+              });
+        })
+      );
+    </script>
+  </body>
+</html>
