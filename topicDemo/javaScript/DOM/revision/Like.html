@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Like Btn</h1>
+    <button id="likeBtn">
+      <span></span>
+      <img src="./pic//LikeBtn.jpg" height="80px" width="80px" />
+    </button>
+    <script>
+      const likeButton = document.getElementById("likeBtn");
+      const likeCount = document.querySelector("span");
+      let like = 0;
+      likeCount.innerHTML = like;
+      likeButton.addEventListener("click", () => {
+        like++;
+        likeCount.innerHTML = like;
+      });
+    </script>
+  </body>
+</html>
