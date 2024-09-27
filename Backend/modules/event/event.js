@@ -114,20 +114,24 @@ const signInHandler2 = (username, fileName) => {
 const signInHandler3 = (username, fileName) => {
   console.log("inside signInHandler3");
 };
+const signInHandler4 = () => {
+  console.log("inside signInHandler4");
+};
 
-sign_in.on("sign_in", signInHandler1);
-sign_in.on("sign_in", signInHandler2);
+sign_in.once("sign_in", signInHandler1);
+sign_in.once("sign_in", signInHandler2);
 
 sign_in.emit("sign_in", "Karan Raj", "usersList");
-sign_in.off("sign_in", signInHandler2);
+// sign_in.off("sign_in", signInHandler2);
 
 sign_in.on("sign_in", signInHandler3);
 
 sign_in.emit("sign_in", "Harsh Raj", "usersList");
+sign_in.off("sign_in", signInHandler3)
+sign_in.on("sign_in", signInHandler4);
+sign_in.emit("sign_in");
 
 // more Methods
- // removeAllListener -->for remove all
- // listenerCount()---> count the listener
-  // once-->execute one and after off automatically
-  
-
+// removeAllListener -->for remove all
+// listenerCount()---> count the listener
+// once-->execute one and after off automatically

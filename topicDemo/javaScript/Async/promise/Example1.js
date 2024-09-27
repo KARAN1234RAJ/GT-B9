@@ -1,6 +1,5 @@
 const promIse = new Promise((resolve, reject) => {
   let anyCondition = true;
-
   if (anyCondition) {
     resolve("Promise is resolved");
   } else {
@@ -12,5 +11,4 @@ const promIse = new Promise((resolve, reject) => {
   })
   .catch((message) => {
     console.log(message);
-  });
-
+});
